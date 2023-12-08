@@ -12,8 +12,8 @@ if (!empty($_POST["data"])){
         move_uploaded_file($file["MatchBillede"]["tmp_name"], "uploads/" . basename($file["MatchBillede"]["name"]) );
     }
 
-    $sql = "INSERT INTO matchfilter (MatchNavn, MatchBillede, MatchBeskrivelse, MatchAfstand, MatchKøn, MatchAlder, MatchForhold, MatchInteresse ) VALUES (:(MatchNavn, :MatchBillede, :MatchBeskrivelse, :MatchAfstand, : MatchKøn, :MatchAlder, :MatchForhold, :MatchInteresse )";
-    $bind = [":MatchNavn" =>  $data["MatchNavn"], ":MatchForhold" =>  $data["MatchForhold"], ":MatchBeskrivelse" =>  $data["MatchBeskrivelse"], ":MatchAfstand" =>  $data["MatchAfstand"],  ":MatchKøn" =>  $data["MatchKøn"],  ":MatchAlder" =>  $data["MatchAlder"],  ":MatchInteresse" =>  $data["MatchInteresse"], "MatchBillede" => ($file["MatchBillede"]["tmp_name"]) ? $file["MatchBillede"]["name"] : NULL ];
+    $sql = "INSERT INTO matchfilter (MatchNavn, MatchForhold, MatchBeskrivelse, MatchAfstand, MatchGender, MatchAlder, MatchInteresse, MatchBillede ) VALUES (:MatchNavn, :MatchForhold, :MatchBeskrivelse, :MatchAfstand, :MatchGender, :MatchAlder, :MatchInteresse, :MatchBillede )";
+    $bind = [":MatchNavn" => $data["MatchNavn"], ":MatchForhold" => $data["MatchForhold"], ":MatchBeskrivelse" => $data["MatchBeskrivelse"], ":MatchAfstand" => $data["MatchAfstand"], ":MatchGender" => $data["MatchGender"], ":MatchAlder" => $data["MatchAlder"], ":MatchInteresse" => $data["MatchInteresse"], ":MatchBillede" => ($file["MatchBillede"]["tmp_name"]) ? $file["MatchBillede"]["name"] : NULL ];
 
     $db->sql($sql, $bind, false );
 
@@ -54,15 +54,15 @@ if (!empty($_POST["data"])){
             </div>
         </div>
         <div class="col-12 col-md-6">
-            <label for="MatchAfstand">MatchForhold</label>
-            <input class="form-control" type="text" name="data[MatchForhold]" id="MatchForhold" placeholder="MatchForhold" value="">
+            <label for="MatchForhold">MatchForhold</label>
+            <input class="form-control" type="text" name="data[MatchForhold]" id="MatchForhold" placeholder="MatchForholdtype" value="">
         </div>
         <div class="col-12 col-md-6">
-            <label for="MatchKøn "> MatchKøn </label>
-            <input class="form-control" type="text" name="data[MatchKøn]" id="MatchKøn " placeholder="MatchKøn " value="">
+            <label for="MatchGender"> MatchKøn </label>
+            <input class="form-control" type="text" name="data[MatchGender]" id="MatchGender" placeholder="MatchGender" value="">
         </div>
         <div class="col-12 col-md-6">
-            <label for="FilmPris"> MatchAfstand</label>
+            <label for="MatchAfstand"> MatchAfstand</label>
             <input class="form-control" type="number" step="0.1" name="data[MatchAfstand]" id="MatchAfstand" placeholder="MatchAfstand" value="">
         </div>
         <div class="col-12">
@@ -81,13 +81,13 @@ if (!empty($_POST["data"])){
     </div>
     <div class="col-12 ">
         <div class="form-group">
-            <label for="MatchBeskrivelse"></label>
+            <label for="MatchBeskrivelse">MatchBeskrivelse</label>
             <textarea class="form-control" name="data[MatchBeskrivelse]" id="MatchBeskrivelse"></textarea>
         </div>
     </div>
 
     <div class="col-12 col-md-6 offset-md-6 ">
-        <button class="form-control btn btn-primary" type="submit" id="btnSubmit">Opret data</button>
+        <button class="form-control btn btn-primary text-white" type="submit" id="btnSubmit">Opret data</button>
     </div>
 </form>
 
