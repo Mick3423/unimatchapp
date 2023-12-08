@@ -11,6 +11,8 @@ $link-decoration: none;
 // 4. Include any default map overrides here
 $custom-colors: (
 	"farve": $cyan-400,
+
+				"primary": #b87333
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -18,3 +20,46 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "bootstrapComponents";
 
 // 5. Du kan lave styling her...
+
+*{
+	font-family: 'Work Sans', sans-serif;
+	box-sizing: border-box;
+}
+
+
+body {
+	margin: 0;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+ul, ol {
+	margin: 2px 10px 2px 10px;
+	padding: 0;
+	list-style-position: inside;
+}
+
+li {
+	margin: 0;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.profilliste .items .card-img-top{
+	height: 341px;
+	object-fit: cover;
+}
+
