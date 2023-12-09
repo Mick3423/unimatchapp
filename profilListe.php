@@ -74,10 +74,10 @@
 
 
 <footer>
-    <div class="container-fluid text-dark text-center bg-primary h-100">
+    <div class="container-fluid text-dark text-center bg-primary h-100 mt-3">
 
 
-        <a class="btn btn-outline-dark btn-floating mb-2" href="" role="button">
+        <a class="btn btn-outline-dark btn-floating mb-2" href="profilListe.php" role="button">
             <i class="fa-solid fa-house"></i>
         </a>
 
