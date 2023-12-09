@@ -6,7 +6,7 @@ require "settings/init.php";
 <head>
 	<meta charset="utf-8">
 	
-	<title>Sigende titel</title>
+	<title>Startside</title>
 	
 	<meta name="robots" content="All">
 	<meta name="author" content="Udgiver">
@@ -22,11 +22,11 @@ require "settings/init.php";
 </head>
 
 
-<div class="container col-sm-12 ">
+<div class="container col-12 col-sm-12 justify-content-center align-items-center">
     <div class="row">
         <img src="images/UMlogo.png" alt="">
-        <a href="profilListe.php" class="btn btn-light w-100 m-3">Log ind</a>
-        <a href="" class="btn btn-light w-100 m-3">opret bruger</a>
+        <a href="profilListe.php" class="btn btn-light btn-outline-dark w-100 m-3">Log ind</a>
+        <a href="" class="btn btn-light btn-outline-dark w-100 m-3">opret bruger</a>
 
     </div>
 </div>

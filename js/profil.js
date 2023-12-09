@@ -44,7 +44,7 @@ export default class Profilliste{
 
         for (const item of data){
             const col  = document.createElement('div');
-            col.classList.add('col-sm-6','col-md-6', 'col-lg-4', 'col-xl-3');
+            col.classList.add( 'col-6','col-sm-6','col-md-6', 'col-lg-4', 'col-xl-3');
 
             col.innerHTML = `
             <div class="card">
@@ -56,7 +56,7 @@ export default class Profilliste{
             <p class="card-text">${item.MatchAlder}</p>
             <p class="card-text">${item.MatchForhold}</p>
             <p class="card-text">${item.MatchBeskrivelse}</p>
-            <a href="Profilside.php?Matchid=${item.MatchId}" class="btn btn-primary text-white w-100">se profil</a>
+            <a href="Profilside.php?Matchid=${item.MatchId}" class="btn btn-light btn-outline-dark w-100">se profil</a>
 
             </div>
             
