@@ -32,13 +32,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.php"></a>
+                    <a class="nav-link active" aria-current="page" href=""></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="profilListe.php">liste</a>
+                    <a class="nav-link active" aria-current="page" href=""></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="profilside.php">profilside</a>
+                    <a class="nav-link active" aria-current="page" href=""></a>
                 </li>
 
 
@@ -84,13 +84,13 @@
         <a class="btn btn-outline-dark btn-floating mb-2" href="#" role="button">
             <i class="fa-solid fa-heart"></i>
         </a>
-        <a class="btn btn-outline-dark btn-floating mb-2" href="#" role="button">
+        <a class="btn btn-outline-dark btn-floating mb-2" href="kalender.php" role="button">
             <i class="fa-solid fa-calendar-days"></i>
         </a>
         <a class="btn btn-outline-dark btn-floating mb-2" href="#" role="button">
             <i class="fa-solid fa-comments"></i>
         </a>
-        <a class="btn btn-outline-dark btn-floating mb-2" href="#" role="button">
+        <a class="btn btn-outline-dark btn-floating mb-2" href="profilprivat.php" role="button">
             <i class="fa-solid fa-user"></i>
         </a>
 
