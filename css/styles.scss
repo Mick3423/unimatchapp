@@ -29,7 +29,11 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 body {
 	margin: 0;
-
+background-image: url("../images/Temafarve1.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
 }
 
 h1, h2, h3, h4, h5, h6 {
