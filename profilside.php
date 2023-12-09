@@ -54,7 +54,7 @@ $match = $db->sql("SELECT * FROM matchfilter WHERE MatchId = 1");
 
 <div class="vontainer justify-content-center align-items-center">
     <div class="row">
-     <div class="card col-12 col-md-6 col-lg-4">
+     <div class="card col-sm-12 col-md-6 col-lg-4">
          <img src="uploads/<?php echo $match[0]->MatchBillede; ?> ">
                      <div class="card-body">
 
@@ -69,10 +69,10 @@ $match = $db->sql("SELECT * FROM matchfilter WHERE MatchId = 1");
 
 
 <footer>
-    <div class="container-fluid text-dark text-center bg-primary h-100">
+    <div class="container-fluid text-dark text-center bg-primary h-100 mt-3">
 
 
-        <a class="btn btn-outline-dark btn-floating mb-2" href="" role="button">
+        <a class="btn btn-outline-dark btn-floating mb-2" href="profilListe.php" role="button">
             <i class="fa-solid fa-house"></i>
         </a>
 
