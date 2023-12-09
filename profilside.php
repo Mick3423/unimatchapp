@@ -9,7 +9,7 @@ $match = $db->sql("SELECT * FROM matchfilter WHERE MatchId = 1");
 <head>
     <meta charset="utf-8">
 
-    <title>Sigende titel</title>
+    <title>profilside</title>
 
     <meta name="robots" content="All">
     <meta name="author" content="Udgiver">
@@ -52,7 +52,7 @@ $match = $db->sql("SELECT * FROM matchfilter WHERE MatchId = 1");
 </nav>
 
 
-<div class="vontainer justify-content-center align-items-center">
+<div class="container col-12 col-sm-12 justify-content-center align-items-center mt-3">
     <div class="row">
      <div class="card col-sm-12 col-md-6 col-lg-4">
          <img src="uploads/<?php echo $match[0]->MatchBillede; ?> ">
@@ -79,13 +79,13 @@ $match = $db->sql("SELECT * FROM matchfilter WHERE MatchId = 1");
         <a class="btn btn-outline-dark btn-floating mb-2" href="#" role="button">
             <i class="fa-solid fa-heart"></i>
         </a>
-        <a class="btn btn-outline-dark btn-floating mb-2" href="#" role="button">
+        <a class="btn btn-outline-dark btn-floating mb-2" href="kalender.php " role="button">
             <i class="fa-solid fa-calendar-days"></i>
         </a>
         <a class="btn btn-outline-dark btn-floating mb-2" href="#" role="button">
             <i class="fa-solid fa-comments"></i>
         </a>
-        <a class="btn btn-outline-dark btn-floating mb-2" href="#" role="button">
+        <a class="btn btn-outline-dark btn-floating mb-2" href="profilprivat.php" role="button">
             <i class="fa-solid fa-user"></i>
         </a>
 
