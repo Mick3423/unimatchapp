@@ -56,7 +56,7 @@ export default class Profilliste{
             <p class="card-text">${item.MatchAlder}</p>
             <p class="card-text">${item.MatchForhold}</p>
             <p class="card-text">${item.MatchBeskrivelse}</p>
-            <a href="Profilside.php?Matchid=${item.MatchId}" class="btn btn-light btn-outline-dark w-100">se profil</a>
+            <a href="profilside.php?Matchid=${item.MatchId}" class="btn btn-light btn-outline-dark w-100">se profil</a>
 
             </div>
             
