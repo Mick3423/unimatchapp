@@ -101,7 +101,7 @@ $match = $db->sql("SELECT * FROM matchfilter WHERE MatchId = 1");
                    Hjælp
                 </button>
             </h2>
-            <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
              tekst om Hjælp
             </div>
             <div class="accordion-item">
