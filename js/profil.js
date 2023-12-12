@@ -52,8 +52,8 @@ export default class Profilliste{
             
             <div class="card-body">
             <h5 class="card-title">${item.MatchNavn}</h5>
-            <p class="card-text">${item.MatchAfstand}</p>
-            <p class="card-text">${item.MatchAlder}</p>
+            <p class="card-text">${item.MatchAfstand} km </p>
+            <p class="card-text">${item.MatchAlder} år</p>
             <p class="card-text">${item.MatchForhold}</p>
             <p class="card-text">${item.MatchBeskrivelse}</p>
             <a href="profilside.php?Matchid=${item.MatchId}" class="btn btn-light btn-outline-dark w-100">se profil</a>
